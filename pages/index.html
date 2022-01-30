@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="../public/app.css">
+    <script src="/public/app.js"></script>
+
+    <title>LogIn/SignUp</title>
+</head>
+
+<body>
+    <div class="form">
+        <div class="tab-header">
+            <div class="active">Sign Up</div>
+            <div>Sign In</div>
+        </div>
+        <div class="tab-content">
+
+            <!-------- sign up ---------->
+            <div class="tab-body active">
+                <form action="/register" method="POST">
+                    <div class="form-element">
+                        <input type="text" name="user_name" placeholder="Username">
+                    </div>
+                    <div class="form-element">
+                        <input type="email" name="user_email" placeholder="Email">
+                    </div>
+                    <div class="form-element">
+                        <input type="password" name="user_password" placeholder="Password">
+                    </div>
+                    <div class="form-element">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-------- sign in ---------->
+            <div class="tab-body">
+                <form action="/login" method="POST">
+                    <div class="form-element">
+                        <input type="text" name="user_name_or_email" placeholder="Username/Email">
+                    </div>
+                    <div class="form-element">
+                        <input type="password" name="user_password" placeholder="Password">
+                    </div>
+                    <div class="form-element">
+                        <button type="submit">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
